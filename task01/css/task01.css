@@ -1,14 +1,150 @@
-h1{
-	color: blue;
+/*
+text-indent 文本缩进
+text-transform 转换大小写 uppercase lowercase none full-width 
+text-decoration 文本装饰（下划线underline，删除线，none）
+text-align 文本居中
+word-spacing 字间距
+white-space 空白间距
+color 文本颜色
+line-hight 行高
+font 字体
+font-family 字体
+font-size 字体大小
+font-weight 字体粗细 400 700 normal bold
+font-face 
+
+
+*/
+
+ul, ol {
+    list-style: none;
 }
-h2{
-	font-size: 14px;
+
+h1 {
+    color: blue;
 }
-p{
-	font-size: 12px;
-	color: yellow;
-	background-color: #333;
+
+h2 {
+    font-size: 14px;
 }
-img{
-	border: 2px solid red;
+
+p {
+    font-size: 12px;
+    color: yellow;
+    background-color: #333;
 }
+
+img {
+    border: 2px solid red;
+    width: 480px;
+    height: auto;
+}
+
+.box1 {
+    width: 100%;
+}
+
+.box1 div {
+    width: 960px;
+    height: 50px;
+    background-color: red;
+    border: 2px solid green;
+
+}
+
+.fir {
+    margin: 0 auto;
+}
+
+.sec {
+    position: relative;
+    left: 50%;
+    margin-left: -480px;
+}
+
+.box2 {
+    width: 100%;
+    position: relative;
+}
+
+.box2 .l {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: pink;
+}
+
+.box2 .r {
+    margin-left: 200px;
+    background-color: blue;
+}
+
+.box3 {
+    width: 100%;
+    position: relative;
+}
+
+.box3 .l {
+    width: 200px;
+    float: left;
+    background-color: pink;
+}
+
+.box3 .r {
+    margin-left: 200px;
+    background-color: blue;
+}
+
+.box4 {
+    position: relative;
+}
+
+.box4 .l {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+
+.box4 .m {
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: palegoldenrod;
+}
+
+.box4 .r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+}
+
+.box6 {
+    background: red;
+    clear: both;
+}
+
+.box6 ul {
+    background: red;
+}
+
+.box6 li {
+    float: left;
+    width: 200px;
+    height: 100px;
+    background: blue;
+    margin: 2px;
+}
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+
+
+
+
