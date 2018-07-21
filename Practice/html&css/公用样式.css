@@ -1,0 +1,13 @@
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
+}
+.clearfix{
+	display: inline-block;
+	_height: 1%;
+}
