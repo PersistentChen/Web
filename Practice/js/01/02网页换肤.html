@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页换肤</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            font-size: 0;
+            height: 0;
+        }
+        .clearfix{
+            display: inline-block;
+            _height: 1%;
+        }
+        body{
+            background-color: pink;
+        }
+        .outer{
+            width: 500px;
+            height: 60px;
+            margin: 10px auto;
+        }
+        li {
+            float: left;
+            list-style: none;
+        }
+        #skin{
+            width: 500px;
+            height: 14px;
+        }
+        #skin li{
+            width: 8px;
+            height: 8px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #red{
+            border: 3px solid red;
+            background-color: #fff;
+        }
+        #green{
+            border: 3px solid green;
+        }
+        #black{
+            border: 3px solid black;
+        }
+        #nav{
+            width: 500px;
+            height: 26px;
+            background-color: #fff;
+            border: 1px solid #fff;
+        }
+        #nav li{
+            width: 16.5%;
+            height: 26px;
+            background-color: red;
+            border-right: 1px solid #fff;
+            text-align: center;
+            line-height: 26px;
+        }
+        #nav li:last-child{
+            border: 0;
+        }
+        #nav a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <ul id="skin" class="clearfix">
+            <li id="red"></li>
+            <li id="green"></li>
+            <li id="black"></li>
+        </ul>
+        <ul id="nav">
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">电影</a></li>
+            <li><a href="#">音乐</a></li>
+            <li><a href="#">旅游</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function my$(id) {
+            return document.getElementById(id);
+        }
+        var body=document.getElementsByTagName("body");
+
+    </script>
+</body>
+</html>

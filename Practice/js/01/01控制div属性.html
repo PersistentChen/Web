@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            text-align: center;
+        }
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <input type="button" value="变宽" id="btn1">
+    <input type="button" value="变高" id="btn2">
+    <input type="button" value="变色" id="btn3">
+    <input type="button" value="隐藏" id="btn4">
+    <input type="button" value="重置" id="btn5">
+    <div id="div1"></div>
+</div>
+<script>
+    function my$(id) {
+        return document.getElementById(id);
+    }
+
+    my$("btn1").onclick=function () {
+      my$("div1").style.width="200px";
+    };
+    my$("btn2").onclick=function () {
+        my$("div1").style.height="200px";
+    };
+    my$("btn3").onclick=function () {
+        my$("div1").style.backgroundColor="red";
+    };
+    my$("btn4").onclick=function () {
+        my$("div1").style.display="none";
+    };
+    my$("btn5").onclick=function () {
+        my$("div1").style="";
+    };
+</script>
+
+</body>
+</html>
